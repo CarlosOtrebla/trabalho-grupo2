@@ -1,13 +1,12 @@
-import { StyleSheet, View, Text } from 'react-native';
-import React from 'react';
+import { StyleSheet, View, Text } from 'react-native'
+import React from 'react'
 
-export default function Contato() {
+export default function Header() {
   return (
     <View style={styles.container}>
-      <Text>Contato</Text>
-      
+      <Text>Header</Text>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({

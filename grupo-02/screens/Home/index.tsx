@@ -1,10 +1,12 @@
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Button } from 'react-native';
 import React from 'react';
+import Botao from '../../components/button/Botao';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Text>Pagina Principal</Text>
+      <Botao routeName={'Sobre'}/>
     </View>
   );
 }
