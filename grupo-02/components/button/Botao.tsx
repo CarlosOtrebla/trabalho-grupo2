@@ -1,9 +1,13 @@
 import { StyleSheet, View, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-
 import React from 'react';
 
-export default function Botao({ routeName, title }) {
+interface BtnProps {
+  routeName: string;
+  title: string;
+}
+
+export default function Botao({ routeName, title }: BtnProps) {
   const navigation = useNavigation();
 
   return (
@@ -11,12 +15,13 @@ export default function Botao({ routeName, title }) {
       <Button
         title={title}
         onPress={() => {
-          navigation.jumpTo(routeName, title);
+          navigation.jumpTo(routeName);
         }}
       />
     </View>
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
