@@ -8,18 +8,13 @@ export default function StackRoutes() {
 
   return (
     <Stack.Navigator>
-      <Stack.Screen
-        name='Home'
-        component={Home}
-       
-      />
+      <Stack.Screen name='Home' component={Home} />
       <Stack.Screen
         name='Ajuda'
         component={Ajuda}
         options={{
           headerTitle: 'Ajuda',
           headerTintColor: 'blue',
-        
         }}
       />
       <Stack.Screen

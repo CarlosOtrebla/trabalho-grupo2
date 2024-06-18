@@ -6,7 +6,7 @@ export default function Sobre() {
   return (
     <View style={styles.container}>
       <Text>Sobre</Text>
-      <Botao routeName={'Home'} />
+      <Botao routeName={'Home'} title={'Ir para Home'} />
     </View>
   );
 }
