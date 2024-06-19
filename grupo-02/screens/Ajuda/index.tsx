@@ -1,7 +1,7 @@
 import {View, Text } from 'react-native';
 import React from 'react';
 import styles from './style';
-import Botao2 from '../../components/button/Botao2';
+import Botao2 from '../../components/button/Botao';
 
 export default function Ajuda() {
   return (
