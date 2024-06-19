@@ -1,20 +1,12 @@
 import { StyleSheet, View, Text } from 'react-native';
 import React from 'react';
-import Botao from '../../components/button/Botao';
-
+import Botao2 from '../../components/button/Botao2';
+import styles from './style'
 export default function Sobre() {
   return (
     <View style={styles.container}>
-      <Text>Sobre</Text>
-      <Botao routeName={'Home'} title={'Ir para Home'} />
+      <Botao2 routeName={'Home'} title={'Ir para Home'} />      
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});

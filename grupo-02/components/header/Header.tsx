@@ -1,18 +1,11 @@
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View, Text, Image } from 'react-native'
 import React from 'react'
+import styles from './style'
 
 export default function Header() {
   return (
     <View style={styles.container}>
-      <Text>Header</Text>
+      <Image source={require('../../assets/favicon.png')}/>
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});

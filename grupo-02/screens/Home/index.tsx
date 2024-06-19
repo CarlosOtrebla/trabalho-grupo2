@@ -1,20 +1,17 @@
 import { StyleSheet, View, Text, Button } from 'react-native';
 import React from 'react';
-import Botao from '../../components/button/Botao';
+import Botao2 from '../../components/button/Botao2';
+import styles from './style';
+import Header from '../../components/header/Header';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>Pagina Principal</Text>
-      <Botao routeName={'Sobre'} title={'Ir para Sobre'} />
+      <Header/>
+      <Botao2 routeName={'Ajuda'} title={'Ir para Ajuda'}/>
+      <Botao2 routeName={'Sobre'} title={'Ir para Sobre'}/>
+      <Botao2 routeName={'Contato'} title={'Ir para Contato'}/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
